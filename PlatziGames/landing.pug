@@ -1,6 +1,13 @@
 -var titulo = "Sub-titulo Principal"
 -var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
 //- -var usuario = "Andrés"
+mixin caja(imagen,titulo,contenido) 
+  .caja
+    .caja__imagen: img(src="images/"+imagen)
+    .caja__contenido
+      h3=titulo
+      p=contenido
+      a.boton Leer más
 doctype html
 html
   head
@@ -24,6 +31,9 @@ html
           | Itaque harum aspernatur illo quas?
           span Debitis, quasi quis soluta eveniet ratione culpa eaque sin
         a.boton Leer Más
-    ul
-      each titulo in titulos
-        li=titulo
+    main.contenido
+      +caja('imagen.png',titulos[1],'Lorem ipsum dolor sit amet')
+      +caja('imagen.png',titulos[2],'Debitis, quasi quis')
+      +caja('imagen.png',titulos[3],'Itaque harum aspernatur illo quas?')
+      
+      
