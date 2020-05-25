@@ -9,13 +9,11 @@
     border-radius: 50em;
   }
   &__nombre {
-    text-transform: uppercase;
     text-align: center;
     font-size: 20px;
-    font-family: $fuente2;
+    @include titulos($fuente2);
   }
   &__titulo {
-    text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     font-size: 12px;
@@ -29,10 +27,9 @@
     padding-top: 15px;
     border-radius: 20px;
     text-decoration: none;
-    text-transform: uppercase;
     text-align: center;
-    font-family: $fuente2;
     color: $color-claro;
+    @include titulos($fuente2);
     background-color: get-opacity($color-primario, .20);
     border: 2px solid get-opacity($color-claro, .30);
   }
