@@ -1,3 +1,4 @@
+/*MIXIN*/
 * {
   box-sizing: border-box;
 }
@@ -21,8 +22,9 @@ main {
   margin: 0 auto;
   justify-content: space-around;
   border-radius: 20px;
-  background-color: #fff;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
   color: #333333;
+  background-color: #fff;
 }
 .estadistica--perfil h3 {
   font-weight: 600;
@@ -84,9 +86,10 @@ main {
   height: 90px;
   margin: 30px auto 0 auto;
   padding: 20px 0 0 50px;
-  border-radius: 30px;
-  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
   color: #333333;
+  background-color: #fff;
 }
 .ubicacion--perfil i {
   display: block;
