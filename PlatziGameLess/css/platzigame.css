@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: #333333;
 }
 h1,
 h2,
@@ -36,7 +37,7 @@ h3 {
   left: 0;
   right: 0;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 .intro__categoria {
   font-family: 'Oswald', sans-serif;
@@ -54,7 +55,7 @@ h3 {
   top: 400px;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #ffffff;
 }
 .intro__autor img {
   width: 60px;
@@ -65,4 +66,16 @@ h3 {
 }
 .intro__autor span {
   display: inline-block;
+}
+.articulo--principal {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.articulo--principal h2 {
+  margin: 40px 0 40px 0;
+  font-size: 50px;
+  text-align: center;
+}
+.articulo--principal h3 {
+  color: #8841da;
 }
