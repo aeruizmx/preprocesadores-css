@@ -94,6 +94,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
+.caja__imagen img {
+  width: 100%;
+  max-width: 430px;
+}
 .estadistica--articulos {
   height: 70px;
   padding: 20px;
@@ -111,4 +115,33 @@ body {
 }
 .estadistica--articulos ul span {
   margin-left: 10px;
+}
+.noticias {
+  margin-top: 400px;
+  justify-content: space-evenly;
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.noticia {
+  max-width: 430px;
+  background-color: #fff;
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.2);
+}
+.noticia__contenido {
+  padding: 20px;
+  background-color: #fff;
+}
+.noticia__contenido span {
+  color: #8841da;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.noticia__contenido h3 {
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
 }
