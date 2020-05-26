@@ -3,6 +3,15 @@ fuente2 = 'Oswald', sans-serif
 color-primario = #333333
 color-secundario = #8841da
 color-claro = #ffffff
+/*MIXIN*/
+contenedor()
+  display: flex
+  width: 90%
+  margin: 0 auto
+  padding: 30px 0
+caja-sombra()
+  background-color: color-claro
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.20)
 
 *
   box-sizing: border-box
@@ -28,10 +37,7 @@ body
     font-size: 25px
 
 .encabezado--con-filtros
-  display: flex
-  width: 90%
-  margin: 0 auto
-  padding: 30px 0
+  contenedor()
   h2
     margin-top: 10px
     text-transform: uppercase
@@ -43,9 +49,31 @@ body
     height 75px
     padding: 20px
     margin-left: auto
+    caja-sombra()
     span
       text-transform: uppercase
       font-family: fuente2
     a
       margin-left: 20px
       font-size: 25px
+      color: color-primario
+
+.contenido
+  margin-bottom: 40px
+  justify-content: space-evenly
+  contenedor()
+
+.caja
+  max-width: 400px
+  caja-sombra()
+  &__contenido
+    padding: 20px
+    background-color: color-claro
+    span 
+      text-transform: uppercase
+      color: color-secundario
+      font-family: fuente2
+    h2
+      text-transform: uppercase
+      font-weight: normal
+      font-family: fuente2
