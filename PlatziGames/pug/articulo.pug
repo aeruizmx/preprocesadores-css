@@ -1,8 +1,5 @@
-doctype html
-html
-	include componentes/head.pug
-	include componentes/mixins.pug
-	body
+extend componentes/plantilla.pug
+block contenidos
 		section.intro
 			.intro__imagen: img(src="../images/intro.jpg")
 			.intro__contenido

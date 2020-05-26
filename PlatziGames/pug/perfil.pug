@@ -1,8 +1,5 @@
-doctype html
-html
-	include componentes/head.pug
-	include componentes/mixins.pug
-	body
+extend componentes/plantilla.pug
+block contenidos
 		main
 			section.perfil
 				img(class="perfil__avatar" src="../images/avatar.jpg")

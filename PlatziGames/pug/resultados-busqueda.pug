@@ -1,8 +1,5 @@
-doctype html
-html
-	include componentes/head.pug
-	include componentes/mixins.pug
-	body
+extend componentes/plantilla.pug
+block contenidos
 		.buscador: form: input(type="text" placeholder="Playstation" class="buscador__input")
 		header.encabezado--con-filtros
 			h2 20 Resultados para "Playstation"
