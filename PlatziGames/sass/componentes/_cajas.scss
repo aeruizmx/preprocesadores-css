@@ -69,12 +69,19 @@
 		color: $color-claro;
 		@include titulos($Fuente2);
 	}
+	@include media(mobile-only){
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		margin-top: 50px;
+  }
 }
 
 .caja--grande {
 	max-width: 1000px;
 	height: 550px;
 	margin-right: 20px;
+	margin-bottom: 50px;
 	h2 {
 		@include titulos($Fuente2);
 		@include font-size(50px);
@@ -82,6 +89,22 @@
 	.caja--con-fondo__contenido {
 		padding-top: 200px;
 	}
+	@include media(mobile-only){
+		.caja__imagen{
+			img {
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+		.caja--con-fondo__contenido {
+			h2 {
+				@include font-size(40px);
+			}
+			p {
+				display: none;
+			}
+		}
+  }
 }
 
 .caja--mediana {
@@ -92,4 +115,20 @@
 .caja--pequeña {
 	max-width: 300px;
 	height: 250px;
+	@include media(mobile-only){
+		.caja__imagen{
+			img {
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+		.caja--con-fondo__contenido {
+			h2 {
+				@include font-size(40px);
+			}
+			p {
+				display: none;
+			}
+		}
+  }
 }

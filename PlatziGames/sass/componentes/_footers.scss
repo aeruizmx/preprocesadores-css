@@ -5,6 +5,11 @@
   margin-top: 30px;
   padding: 0 20px 20px 20px;
   background-color: $color-primario;
+  @include media(mobile-only){
+    display: inline-block;
+    height: auto;
+    position: relative;
+  }
 }
 
 .nav--footer ul {
@@ -17,6 +22,9 @@
   a {
     color: $color-claro;
     @include titulos($Fuente2);
+  }
+  @include media(mobile-only){
+    display: inline-block;
   }
 }
 

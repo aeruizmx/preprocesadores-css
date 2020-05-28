@@ -25,4 +25,8 @@
     margin-right: 20px;
     color: get-opacity($color-primario, .5);
   }
+  @include media(mobile-only){
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
